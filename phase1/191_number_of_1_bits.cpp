@@ -17,7 +17,14 @@ using namespace std;
 class Solution {
 public:
     int hammingWeight(int n) {
-
+        int count=0;//1的個數
+        while(n){
+            if(n%2==1){
+                count++;
+            }
+            n /= 2;
+        }
+        return count;
     }
 };
 
