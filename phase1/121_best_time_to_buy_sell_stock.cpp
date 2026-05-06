@@ -1,0 +1,44 @@
+/*
+ * 121. Best Time to Buy and Sell Stock
+ * Difficulty: Easy
+ * Tags: Array, DP
+ *
+ * Description:
+ * You are given an array prices where prices[i] is the price of a given
+ * stock on the ith day.
+ * You want to maximize your profit by choosing a single day to buy one stock
+ * and choosing a different day in the future to sell that stock.
+ * Return the maximum profit you can achieve from this transaction.
+ * If you cannot achieve any profit, return 0.
+ *
+ * Constraints:
+ * - 1 <= prices.length <= 10^5
+ * - 0 <= prices[i] <= 10^4
+ */
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    int maxProfit(vector<int>& prices) {
+
+    }
+};
+
+int main() {
+    Solution sol;
+
+    // Input: prices = [7,1,5,3,6,4]
+    // Output: 5
+    vector<int> p1 = {7, 1, 5, 3, 6, 4};
+    cout << sol.maxProfit(p1) << "\n";
+
+    // Input: prices = [7,6,4,3,1]
+    // Output: 0
+    vector<int> p2 = {7, 6, 4, 3, 1};
+    cout << sol.maxProfit(p2) << "\n";
+
+    return 0;
+}
