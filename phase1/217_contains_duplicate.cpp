@@ -20,6 +20,14 @@ using namespace std;
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
+        unordered_set<int> judge_set;
+        for(int num : nums){
+            if(judge_set.count(num)){
+                return true;
+            }
+            judge_set.insert(num);
+        }
+        return false;
 
     }
 };
