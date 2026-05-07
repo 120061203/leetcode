@@ -17,12 +17,24 @@
 
 #include <iostream>
 #include <vector>
+#include <numeric>
 using namespace std;
 
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
+        int slow = 0, fast = 0;          // 龜兔都從 index 0 出發
+        do {
+            slow = nums[slow];           // slow 每次走一步
+            fast = nums[nums[fast]];     // fast 每次走兩步
+        } while (slow != fast);          // 直到在環內某處相遇
 
+        slow = 0;                        // slow 移回起點，fast 留在相遇點
+        while (slow != fast) {
+            slow = nums[slow];           // 兩者同時走一步
+            fast = nums[fast];
+        }
+        return slow;                     // 再次相遇的點 = 環入口 = 重複數字
     }
 };
 
