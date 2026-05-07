@@ -28,7 +28,10 @@ struct TreeNode {
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
-
+        if(!root)return 0;                        // 空節點，深度為 0（遞迴終止條件）
+        int leftH = maxDepth(root->left);         // 遞迴取得左子樹的最大深度
+        int rightH = maxDepth(root->right);       // 遞迴取得右子樹的最大深度
+        return 1 + max(leftH, rightH);            // 當前節點深度 = 1 + 左右子樹中較深的那個
     }
 };
 
