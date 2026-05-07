@@ -16,10 +16,18 @@
 #include <vector>
 using namespace std;
 
+// DP 解法：O(n) 時間，O(n) 空間
+// 關鍵觀察：i 的 1 的個數 = (i/2) 的 1 的個數 + 最低位是否為 1
+//   i >> 1  → 去掉最低位（相當於 i/2）
+//   i & 1   → 取最低位（偶數為 0，奇數為 1）
 class Solution {
 public:
     vector<int> countBits(int n) {
-
+        vector<int> ans(n+1, 0);
+        for(int i = 1; i <= n; i++){
+            ans[i] = ans[i >> 1] + (i & 1);
+        }
+        return ans;
     }
 };
 
