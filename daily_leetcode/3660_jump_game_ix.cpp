@@ -36,8 +36,7 @@
 
 #include <iostream>
 #include <vector>
-#include <stack>
-#include <numeric>
+#include <climits>
 using namespace std;
 
 // 關鍵觀察：
@@ -46,59 +45,50 @@ using namespace std;
 // 因此每條邊都是雙向的，問題等價於：
 //   找連通分量，ans[i] = 所在分量的最大值。
 //
-// 演算法：Union-Find + 單調棧（左到右掃描）
-//   - 維護一個「棧頂值 >= 後進元素」的單調不遞減棧
-//   - 當 nums[stk.top()] > nums[i]（即 stk.top() < i 且 nums[stk.top()] > nums[i]）
-//     → 兩者之間有邊，union 起來並 pop
-//   - 最後 ans[i] = 其連通分量的最大值
+// 演算法：前綴最大值 + Divide & Conquer
 //
-// 時間複雜度：O(n α(n)) ≈ O(n)
+// prevMax[i] = [0..i] 的最大值及其最左 index（= pivot）
+// process(r, rightMin, rightMax):
+//   - [pivotIndex..r] 內所有元素皆與 pivot 相連（值 <= pMax，可直接左跳到 pivot）
+//     → 它們在同一連通分量，答案相同
+//   - 若 pMax > rightMin：pivot 能右跳，與右側相連 → currMax = rightMax
+//     否則：與右側無連接             → currMax = pMax
+//   - 遞迴處理 [0..pivotIndex-1]，更新 rightMin（加入本段元素）
+//
+// 時間複雜度：O(n)，每個元素只被處理一次
 
 class Solution {
 public:
     vector<int> maxValue(vector<int>& nums) {
         int n = nums.size();
-        vector<int> parent(n), rank_(n, 0);
-        iota(parent.begin(), parent.end(), 0);
-        vector<int> compMax(nums.begin(), nums.end());
+        vector<int> ans(n, 0);
 
-        // 迭代 find + path halving，避免 std::function 和遞迴的 overhead
-        auto find = [&](int x) {
-            while (parent[x] != x) {
-                parent[x] = parent[parent[x]]; // path halving
-                x = parent[x];
-            }
-            return x;
-        };
-
-        auto unite = [&](int a, int b) {
-            a = find(a); b = find(b);
-            if (a == b) return;
-            if (rank_[a] < rank_[b]) swap(a, b);
-            parent[b] = a;
-            if (rank_[a] == rank_[b]) rank_[a]++;
-            compMax[a] = max(compMax[a], compMax[b]);
-        };
-
-        // Stack 存 (index, 該分量目前的最大值)
-        // 比較時用分量最大值，避免 pop 後遺失更大的值
-        stack<pair<int,int>> stk;
-        for (int i = 0; i < n; i++) {
-            int curMax = nums[i];
-            // 若棧頂分量最大值 > nums[i]，代表該分量內有某個 j < i 且 nums[j] > nums[i]
-            // → 邊存在，合併入同一分量
-            while (!stk.empty() && stk.top().second > nums[i]) {
-                unite(i, stk.top().first);
-                curMax = max(curMax, stk.top().second);
-                stk.pop();
-            }
-            stk.push({i, curMax});
+        // prevMax[i] = {[0..i] 的最大值, 其最左 index}
+        using Item = pair<int, int>;
+        vector<Item> prevMax(n);
+        Item prev = {INT_MIN, -1};
+        for (int i = 0; i < n; ++i) {
+            if (nums[i] > prev.first) prev = {nums[i], i};
+            prevMax[i] = prev;
         }
 
-        vector<int> ans(n);
-        for (int i = 0; i < n; i++) {
-            ans[i] = compMax[find(i)];
-        }
+        auto process = [&](auto& self, int r, int rightMin, int rightMax) -> void {
+            auto [pMax, pivotIndex] = prevMax[r];
+
+            // pMax > rightMin：pivot 能右跳，整段連到右側；否則答案就是 pMax
+            int currMax = pMax <= rightMin ? pMax : rightMax;
+
+            int nextRightMin = min(pMax, rightMin);
+            for (int i = pivotIndex; i <= r; ++i) {
+                ans[i] = currMax;
+                nextRightMin = min(nextRightMin, nums[i]);
+            }
+
+            if (pivotIndex == 0) return;
+            self(self, pivotIndex - 1, nextRightMin, currMax);
+        };
+
+        process(process, n - 1, INT_MAX, 0);
         return ans;
     }
 };
