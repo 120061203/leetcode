@@ -26,9 +26,18 @@ struct TreeNode {
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
-
+        if(!root) return nullptr;
+        swap(root->left, root->right);
+        invertTree(root->left);//invert left
+        invertTree(root->right);//invert right
+        return root;
     }
 };
+void swap(TreeNode*& left, TreeNode*& right) {
+    TreeNode* tmp = left;
+    left = right;
+    right = tmp;
+}
 
 int main() {
     Solution sol;
