@@ -39,14 +39,13 @@ int main() {
     r->left->left = new TreeNode(1); r->left->right = new TreeNode(3);
     r->right->left = new TreeNode(6); r->right->right = new TreeNode(9);
     TreeNode* res = sol.invertTree(r);
-    // BFS print
     queue<TreeNode*> q; q.push(res);
     while(!q.empty()){
         TreeNode* cur = q.front(); q.pop();
         cout << cur->val << " ";
         if(cur->left) q.push(cur->left);
         if(cur->right) q.push(cur->right);
-    } cout << "\n";
+    } cout << "\n"; // 4 7 2 9 6 3 1
 
     return 0;
 }

@@ -5,8 +5,8 @@
  *
  * Description:
  * A path in a binary tree is a sequence of nodes where each pair of
- * adjacent nodes has an edge connecting them. The path does not need
- * to pass through the root. Return the maximum path sum.
+ * adjacent nodes has an edge. The path does not need to pass through
+ * the root. Return the maximum path sum of any non-empty path.
  *
  * Constraints:
  * - The number of nodes in the tree is in the range [1, 3 * 10^4].

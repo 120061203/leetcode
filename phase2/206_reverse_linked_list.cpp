@@ -35,6 +35,8 @@ int main() {
     ListNode* h = new ListNode(1);
     h->next = new ListNode(2);
     h->next->next = new ListNode(3);
+    h->next->next->next = new ListNode(4);
+    h->next->next->next->next = new ListNode(5);
     ListNode* r = sol.reverseList(h);
     while(r){ cout << r->val << " "; r = r->next; } cout << "\n";
 

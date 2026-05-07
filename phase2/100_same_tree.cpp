@@ -34,13 +34,13 @@ public:
 int main() {
     Solution sol;
 
-    // p = [1,2,3], q = [1,2,3] → true
+    // p=[1,2,3], q=[1,2,3] → true
     TreeNode* p1 = new TreeNode(1);
     p1->left = new TreeNode(2); p1->right = new TreeNode(3);
     TreeNode* q1 = new TreeNode(1);
     q1->left = new TreeNode(2); q1->right = new TreeNode(3);
     cout << sol.isSameTree(p1, q1) << "\n"; // 1
-    // p = [1,2], q = [1,null,2] → false
+    // p=[1,2], q=[1,null,2] → false
     TreeNode* p2 = new TreeNode(1); p2->left = new TreeNode(2);
     TreeNode* q2 = new TreeNode(1); q2->right = new TreeNode(2);
     cout << sol.isSameTree(p2, q2) << "\n"; // 0

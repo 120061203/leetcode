@@ -6,6 +6,7 @@
  * Description:
  * Given the array nums after the possible rotation and an integer target,
  * return the index of target if it is in nums, or -1 if it is not.
+ * Must run in O(log n).
  *
  * Constraints:
  * - 1 <= nums.length <= 5000

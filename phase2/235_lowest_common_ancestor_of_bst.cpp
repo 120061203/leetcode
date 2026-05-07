@@ -4,7 +4,8 @@
  * Tags: Tree, DFS, Binary Search Tree
  *
  * Description:
- * Given a BST and two nodes p and q, find their lowest common ancestor.
+ * Given a BST and two nodes p and q, find their lowest common ancestor
+ * (the lowest node that has both p and q as descendants).
  *
  * Constraints:
  * - The number of nodes in the tree is in the range [2, 10^5].

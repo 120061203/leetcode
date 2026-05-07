@@ -40,6 +40,7 @@ int main() {
     r->left = new TreeNode(1); r->right = new TreeNode(4);
     r->left->right = new TreeNode(2);
     cout << sol.kthSmallest(r, 1) << "\n"; // 1
+    cout << sol.kthSmallest(r, 2) << "\n"; // 2
 
     return 0;
 }

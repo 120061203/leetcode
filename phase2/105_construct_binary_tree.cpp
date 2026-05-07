@@ -39,7 +39,7 @@ int main() {
 
         vector<int> pre = {3,9,20,15,7}, in = {9,3,15,20,7};
     TreeNode* r = sol.buildTree(pre, in);
-    cout << (r ? r->val : -1) << "\n"; // 3
+    cout << (r ? r->val : -1) << "\n"; // 3 (root)
 
     return 0;
 }

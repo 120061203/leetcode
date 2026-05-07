@@ -12,6 +12,7 @@
  * - 1 <= n <= 10^5
  * nums.length == n + 1
  * 1 <= nums[i] <= n
+ * All integers in nums appear only once except for precisely one integer.
  */
 
 #include <iostream>

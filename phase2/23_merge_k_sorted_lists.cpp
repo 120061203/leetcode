@@ -4,8 +4,8 @@
  * Tags: Linked List, Divide and Conquer, Heap
  *
  * Description:
- * You are given an array of k linked-lists lists, each sorted in
- * ascending order. Merge all the linked-lists into one sorted list.
+ * You are given an array of k linked-lists, each sorted in ascending order.
+ * Merge all the linked-lists into one sorted list and return it.
  *
  * Constraints:
  * - k == lists.length
@@ -35,7 +35,7 @@ public:
 int main() {
     Solution sol;
 
-        // [[1,4,5],[1,3,4],[2,6]] → [1,1,2,3,4,4,5,6]
+    // [[1,4,5],[1,3,4],[2,6]] → [1,1,2,3,4,4,5,6]
     ListNode* l1 = new ListNode(1);
     l1->next = new ListNode(4); l1->next->next = new ListNode(5);
     ListNode* l2 = new ListNode(1);
