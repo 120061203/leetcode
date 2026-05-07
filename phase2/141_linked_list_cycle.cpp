@@ -24,7 +24,16 @@ struct ListNode {
 class Solution {
 public:
     bool hasCycle(ListNode* head) {
-
+        ListNode* slow = head;                          // 慢指針，每次走一步
+        ListNode* fast = head;                          // 快指針，每次走兩步
+        while(fast != nullptr && fast->next != nullptr){ // fast 或 fast->next 為空代表無環
+            slow = slow->next;                          // slow 走一步
+            fast = fast->next->next;                    // fast 走兩步
+            if(slow == fast){                           // 相遇代表有環
+                return true;
+            }
+        }
+        return false;                                   // fast 走到底，無環
     }
 };
 
