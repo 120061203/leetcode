@@ -29,16 +29,37 @@ public:
     }
 };
 
+
+class SolutionOptimized {
+public:
+    bool isAnagram(string s, string t) {
+        unordered_map<char, int> freq;
+        for(char c : s){
+            freq[c]++;
+        }
+        for(char c : t){
+            freq[c]--;
+            if(freq[c] < 0){
+                return false;
+            }
+        }
+        return true;
+    }
+};
+
+
+
 int main() {
     Solution sol;
-
+    SolutionOptimized sol_optimized;
     // Input: s = "anagram", t = "nagaram"
     // Output: true
     cout << sol.isAnagram("anagram", "nagaram") << "\n";
-
+    cout << sol_optimized.isAnagram("anagram", "nagaram") << "\n";
     // Input: s = "rat", t = "car"
     // Output: false
     cout << sol.isAnagram("rat", "car") << "\n";
+    cout << sol_optimized.isAnagram("rat", "car") << "\n";
 
     return 0;
 }
