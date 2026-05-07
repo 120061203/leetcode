@@ -27,7 +27,13 @@ struct TreeNode {
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {
-
+        return isValidBST(root, nullptr, nullptr);  // 初始時，沒有最小/最大值限制
+    }
+    bool isValidBST(TreeNode* root, TreeNode* min, TreeNode* max) {
+        if(!root) return true;                        // 空節點是 BST
+        if(min && root->val <= min->val) return false; // 當前值小於最小值，不符 BST
+        if(max && root->val >= max->val) return false; // 當前值大於最大值，不符 BST
+        return isValidBST(root->left, min, root) && isValidBST(root->right, root, max); // 遞迴檢查左右子樹
     }
 };
 
