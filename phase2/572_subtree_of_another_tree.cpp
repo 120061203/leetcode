@@ -29,7 +29,15 @@ struct TreeNode {
 class Solution {
 public:
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
-
+        if(!root) return false;//空節點不是子樹
+        if(isSameTree(root, subRoot)) return true;//如果兩棵樹相同，則返回true
+        return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);//遞歸檢查左右子樹
+    }
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        if(!p && !q) return true;// p 和 q 都是 null → 兩棵樹同時走到底，完全一樣 → true
+        if(!p || !q) return false;// 只有一個是 null → 一個有節點一個沒有，結構不同 → false
+        if(p->val != q->val) return false;//節點值不同
+        return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);//遞歸檢查左右子樹
     }
 };
 
@@ -43,6 +51,10 @@ int main() {
     TreeNode* sub = new TreeNode(4);
     sub->left = new TreeNode(1); sub->right = new TreeNode(2);
     cout << sol.isSubtree(root, sub) << "\n"; // 1
+
+    // root=[3,4,5,1,2,null,null,null,null,0], subRoot=[4,1,2] → false
+    root->left->left->left = new TreeNode(0);
+    cout << sol.isSubtree(root, sub) << "\n"; // 0
 
     return 0;
 }
