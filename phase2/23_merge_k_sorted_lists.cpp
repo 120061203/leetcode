@@ -28,7 +28,25 @@ struct ListNode {
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-
+        if(lists.empty()) return nullptr;           // 空陣列直接回傳
+        if(lists.size() == 1) return lists[0];      // 只有一個 list 直接回傳
+        int mid = lists.size() / 2;                 // 從中間切割
+        vector<ListNode*> leftVec(lists.begin(), lists.begin() + mid);   // 左半
+        vector<ListNode*> rightVec(lists.begin() + mid, lists.end());    // 右半
+        ListNode* leftList = mergeKLists(leftVec);  // 遞迴合併左半
+        ListNode* rightList = mergeKLists(rightVec);// 遞迴合併右半
+        return mergeTwoLists(leftList, rightList);  // 合併左右結果
+    }
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        if(!list1) return list2;                    // list1 空，回傳 list2
+        if(!list2) return list1;                    // list2 空，回傳 list1
+        if(list1->val < list2->val){
+            list1->next = mergeTwoLists(list1->next, list2); // list1 較小，接上剩餘合併結果
+            return list1;
+        }else{
+            list2->next = mergeTwoLists(list1, list2->next); // list2 較小，接上剩餘合併結果
+            return list2;
+        }
     }
 };
 
