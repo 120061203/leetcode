@@ -21,7 +21,16 @@ using namespace std;
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-
+        int left = 0, right = nums.size() - 1;  // 二分搜尋的左右邊界
+        while(left < right){                     // left == right 時找到答案
+            int mid = left + (right - left) / 2; // 取中點（防止溢位）
+            if(nums[mid] > nums[right]){          // mid 比 right 大，旋轉點在右半，最小值在右邊
+                left = mid + 1;
+            }else{                               // mid 到 right 遞增，最小值在左半（含 mid）
+                right = mid;
+            }
+        }
+        return nums[left];                       // left == right，即為最小值
     }
 };
 
