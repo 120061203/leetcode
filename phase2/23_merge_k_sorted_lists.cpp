@@ -50,6 +50,30 @@ public:
     }
 };
 
+// Min Heap 解法：把每個 list 的頭節點放進 heap，每次取最小的接到結果上
+class SolutionHeap {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        // 自訂比較子：值較大的優先級較低（min heap）
+        auto cmp = [](ListNode* a, ListNode* b){ return a->val > b->val; };
+        priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq(cmp);
+
+        for(ListNode* node : lists){        // 把每個 list 的頭節點加入 heap
+            if(node) pq.push(node);
+        }
+
+        ListNode dummy(0);                  // dummy 頭節點，簡化邊界處理
+        ListNode* cur = &dummy;
+        while(!pq.empty()){
+            ListNode* node = pq.top(); pq.pop(); // 取出值最小的節點
+            cur->next = node;                    // 接到結果鏈上
+            cur = cur->next;
+            if(node->next) pq.push(node->next);  // 把該節點的下一個加入 heap
+        }
+        return dummy.next;
+    }
+};
+
 int main() {
     Solution sol;
 
@@ -63,6 +87,18 @@ int main() {
     vector<ListNode*> lists = {l1, l2, l3};
     ListNode* r = sol.mergeKLists(lists);
     while(r){ cout << r->val << " "; r = r->next; } cout << "\n";
+
+    // SolutionHeap 測試
+    SolutionHeap solH;
+    ListNode* h1 = new ListNode(1);
+    h1->next = new ListNode(4); h1->next->next = new ListNode(5);
+    ListNode* h2 = new ListNode(1);
+    h2->next = new ListNode(3); h2->next->next = new ListNode(4);
+    ListNode* h3 = new ListNode(2);
+    h3->next = new ListNode(6);
+    vector<ListNode*> lists2 = {h1, h2, h3};
+    ListNode* r2 = solH.mergeKLists(lists2);
+    while(r2){ cout << r2->val << " "; r2 = r2->next; } cout << "\n";
 
     return 0;
 }
