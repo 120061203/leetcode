@@ -19,6 +19,21 @@
 using namespace std;
 
 
+// 簡潔解法：to_string 轉字串後直接遍歷字元
+class SolutionClean {
+public:
+    vector<int> separateDigits(vector<int>& nums) {
+        vector<int> result;
+        for(int num : nums){
+            string s = to_string(num);          // 數字轉字串，順序自然正確
+            for(char ch : s){
+                result.push_back(ch - '0');     // 字元轉數字：'3' - '0' = 3
+            }
+        }
+        return result;
+    }
+};
+
 class Solution {
 public:
     vector<int> separateDigits(vector<int>& nums) {
