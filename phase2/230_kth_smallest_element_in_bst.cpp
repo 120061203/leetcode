@@ -27,8 +27,17 @@ struct TreeNode {
 
 class Solution {
 public:
-    int kthSmallest(TreeNode* root, int k) {
 
+    vector<int> inorder;//初始化inorder
+    void dfs(TreeNode* node){                                                                    
+        if(!node) return;//如果node為空，則返回
+        dfs(node->left);//先走左子樹
+        inorder.push_back(node->val);//記錄當前節點
+        dfs(node->right);//再走右子樹
+    }
+    int kthSmallest(TreeNode* root, int k) {
+        dfs(root);
+        return inorder[k-1];
     }
 };
 
