@@ -27,7 +27,23 @@ struct TreeNode {
 class Solution {
 public:
     vector<vector<int>> levelOrder(TreeNode* root) {
-
+        //用BFS，queue結構儲存每一層的節點，每次處理一層的節點，處理完後將下一層的節點加入queue
+        vector<vector<int>> result;//初始化結果
+        if(!root) return result;//如果root為空，則返回結果
+        queue<TreeNode*> q;//初始化queue
+        q.push(root);//將root加入queue
+        while(!q.empty()){
+            int size = q.size();//記錄這層有幾個節點
+            vector<int> level;//初始化這層的結果
+            for(int i = 0; i < size; i++){
+                TreeNode* cur = q.front(); q.pop();//取出節點
+                level.push_back(cur->val);//加入這層的結果
+                if(cur->left) q.push(cur->left);//左子加入queue（下一層）
+                if(cur->right) q.push(cur->right);//右子加入queue（下一層）
+            }
+            result.push_back(level);//這層結束，加入結果
+        }
+        return result;
     }
 };
 
