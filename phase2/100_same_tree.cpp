@@ -27,7 +27,10 @@ struct TreeNode {
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
-
+        if(!p && !q) return true;//如果p和q 都為空，則返回true
+        if(!p||!q) return false;//如果p和q其中一個為空，則返回false
+        if(p->val != q->val) return false;//如果p和q的值不同，則返回false
+        return isSameTree(p->left,q->left)&&isSameTree(p->right,q->right);
     }
 };
 
