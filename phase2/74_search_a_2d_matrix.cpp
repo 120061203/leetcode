@@ -23,6 +23,18 @@ using namespace std;
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        int row = matrix.size();//行數
+        int col = matrix[0].size();//列數
+        int left = 0;//左邊界
+        int right = row * col - 1;//右邊界
+        while(left <= right){
+            int mid = left + (right - left) / 2;
+            int mid_value = matrix[mid / col][mid % col];//中間值
+            if(mid_value == target) return true;
+            if(mid_value < target) left = mid + 1;//如果中間值小於目標值，則左邊界為中間值+1
+            else right = mid - 1;//如果中間值大於目標值，則右邊界為中間值-1
+        }
+        return false;
 
     }
 };
