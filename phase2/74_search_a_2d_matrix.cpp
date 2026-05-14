@@ -39,6 +39,24 @@ public:
     }
 };
 
+// 精簡版：找最左邊 >= target 的位置，最後比較一次
+class Solution2 {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        int n = matrix.size();
+        int m = matrix[0].size();
+        int l = 0, r = m * n - 1;
+        while(l != r){
+            int mid = (l + r - 1) >> 1;            // 取左中點，防止死循環
+            if(matrix[mid / m][mid % m] < target)
+                l = mid + 1;                        // 左半太小，縮左邊界
+            else
+                r = mid;                            // 右半可能是答案，縮右邊界
+        }
+        return matrix[r / m][r % m] == target;     // 最後確認是否等於 target
+    }
+};
+
 int main() {
     Solution sol;
 
