@@ -28,7 +28,16 @@ struct TreeNode {
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-
+        while (root) {//當root不為空時，繼續執行
+            if (p->val < root->val && q->val < root->val) {//如果p和q都小於root，則往左子樹找
+                root = root->left;
+            } else if (p->val > root->val && q->val > root->val) {//如果p和q都大於root，則往右子樹找
+                root = root->right;
+            } else {//如果p和q在root的兩側，則root就是最低共同祖先
+                return root;
+            }
+        }
+        return nullptr;
     }
 };
 
