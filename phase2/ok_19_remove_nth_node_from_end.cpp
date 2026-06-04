@@ -26,7 +26,19 @@ struct ListNode {
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;
+        ListNode* slow = dummy;
+        ListNode* fast = dummy;
+        for(int i = 0; i < n; i++){
+            fast = fast->next;//fast先走n步
+        }
+        while(fast->next){
+            slow = slow->next;//slow和fast一起走
+            fast = fast->next;
+        }
+        slow->next = slow->next->next;//刪除第n個節點
+        return dummy->next;//返回新的頭節點
     }
 };
 
