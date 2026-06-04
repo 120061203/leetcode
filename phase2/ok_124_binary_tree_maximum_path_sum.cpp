@@ -27,8 +27,26 @@ struct TreeNode {
 
 class Solution {
 public:
-    int maxPathSum(TreeNode* root) {
+    int ans = INT_MIN;
 
+    // 回傳以 node 為端點，往下延伸的最大貢獻值（只能選左或右其中一邊）
+    int dfs(TreeNode* node) {
+        if (!node) return 0;//如果node為空，則返回0
+
+        // 負貢獻不要，直接捨棄（取 0）
+        int left  = max(0, dfs(node->left));
+        int right = max(0, dfs(node->right));
+
+        // 以 node 為拐彎點的路徑總和（左+自己+右），更新全域最大值
+        ans = max(ans, left + node->val + right);
+
+        // 往上只能貢獻一邊
+        return node->val + max(left, right);
+    }
+
+    int maxPathSum(TreeNode* root) {
+        dfs(root);
+        return ans;
     }
 };
 
