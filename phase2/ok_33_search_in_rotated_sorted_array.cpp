@@ -22,7 +22,19 @@ using namespace std;
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-
+        int left = 0, right = nums.size() - 1;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] == target) return mid;
+            if (nums[left] <= nums[mid]) {//左半部分是升序
+                if (nums[left] <= target && target < nums[mid]) right = mid - 1;//target在左半部分
+                else left = mid + 1;
+            } else {    //右半部分是升序
+                if (nums[mid] < target && target <= nums[right]) left = mid + 1;//target在右半部分
+                else right = mid - 1;
+            }
+        }
+        return -1;
     }
 };
 
