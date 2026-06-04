@@ -1,6 +1,6 @@
 # Blind 75 LeetCode Tracker
 
-> 📊 Progress: 0 / 75 completed
+> 📊 Progress: 33 / 75 completed
 
 ---
 
@@ -15,11 +15,11 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | [ ] | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | Todo | | | | Given an array of integers, return indices of the two numbers that add up to target. | |
+| 1 | [x] | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | Done | | | | Given an array of integers, return indices of the two numbers that add up to target. | |
 | 2 | [ ] | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Array, Hash Table, String, Sorting | Todo | | | | Group strings that are anagrams of each other. | |
-| 3 | [ ] | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table, Sorting | Todo | | | | Return true if any value appears at least twice in the array. | |
+| 3 | [x] | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Easy | Array, Hash Table, Sorting | Done | | | | Return true if any value appears at least twice in the array. | |
 | 4 | [ ] | 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | Array, Prefix Sum | Todo | | | | Return array where each element is the product of all other elements. | |
-| 5 | [ ] | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Hash Table, String, Sorting | Todo | | | | Determine if two strings are anagrams of each other. | |
+| 5 | [x] | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Easy | Hash Table, String, Sorting | Done | | | | Determine if two strings are anagrams of each other. | |
 | 6 | [ ] | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Medium | Array, Hash Table, Heap | Todo | | | | Return the k most frequent elements in the array. | |
 | 7 | [ ] | 271 | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium | Array, String, Design | Todo | | | | Design an algorithm to encode/decode a list of strings. | |
 | 8 | [ ] | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | Array, Hash Table, Union Find | Todo | | | | Find the length of the longest consecutive elements sequence. | |
@@ -30,7 +30,7 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 9 | [ ] | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Two Pointers, String | Todo | | | | Check if a string is a palindrome considering only alphanumeric characters. | |
+| 9 | [x] | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Two Pointers, String | Done | | | | Check if a string is a palindrome considering only alphanumeric characters. | |
 | 10 | [ ] | 15 | [3Sum](https://leetcode.com/problems/3sum/) | Medium | Array, Two Pointers, Sorting | Todo | | | | Find all unique triplets that sum to zero. | |
 | 11 | [ ] | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Medium | Array, Two Pointers, Greedy | Todo | | | | Find two lines that form a container holding the most water. | |
 | 12 | [ ] | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Hard | Array, Two Pointers, Stack, DP | Todo | | | | Compute how much water can be trapped after raining. | |
@@ -41,7 +41,7 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 13 | [ ] | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Array, DP | Todo | | | | Find the maximum profit from a single buy and sell. | |
+| 13 | [x] | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | Array, DP | Done | | | | Find the maximum profit from a single buy and sell. | |
 | 14 | [ ] | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | Hash Table, String, Sliding Window | Todo | | | | Find the length of the longest substring without repeating characters. | |
 | 15 | [ ] | 424 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Medium | Hash Table, String, Sliding Window | Todo | | | | Find the longest substring with same letters after k replacements. | |
 | 16 | [ ] | 76 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard | Hash Table, String, Sliding Window | Todo | | | | Find minimum window substring containing all chars of t. | |
@@ -52,7 +52,7 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 17 | [ ] | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | String, Stack | Todo | | | | Determine if the input string of brackets is valid. | |
+| 17 | [x] | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | String, Stack | Done | | | | Determine if the input string of brackets is valid. | |
 | 18 | [ ] | 155 | [Min Stack](https://leetcode.com/problems/min-stack/) | Medium | Stack, Design | Todo | | | | Design a stack that supports push, pop, top, and getMin in O(1). | |
 | 19 | [ ] | 84 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | Hard | Array, Stack, Monotonic Stack | Todo | | | | Find the largest rectangle in a histogram. | |
 
@@ -62,10 +62,10 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | [ ] | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | Array, Binary Search, Matrix | Todo | | | | Search for a target value in a sorted m x n matrix. | |
-| 21 | [ ] | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | Array, Binary Search | Todo | | | | Find the minimum element in a rotated sorted array. | |
-| 22 | [ ] | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Array, Binary Search | Todo | | | | Search for a target in a rotated sorted array. | |
-| 23 | [ ] | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | Array, Binary Search, Divide & Conquer | Todo | | | | Find the median of two sorted arrays in O(log(m+n)). | |
+| 20 | [x] | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | Medium | Array, Binary Search, Matrix | Done | | | | Search for a target value in a sorted m x n matrix. | |
+| 21 | [x] | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Medium | Array, Binary Search | Done | | | | Find the minimum element in a rotated sorted array. | |
+| 22 | [x] | 33 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Array, Binary Search | Done | | | | Search for a target in a rotated sorted array. | |
+| 23 | [x] | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | Hard | Array, Binary Search, Divide & Conquer | Done | | | | Find the median of two sorted arrays in O(log(m+n)). | |
 
 ---
 
@@ -73,14 +73,14 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 24 | [ ] | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked List, Recursion | Todo | | | | Reverse a singly linked list. | |
-| 25 | [ ] | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List, Recursion | Todo | | | | Merge two sorted linked lists into one sorted list. | |
-| 26 | [ ] | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | Hash Table, Linked List, Two Pointers | Todo | | | | Detect if a linked list has a cycle. | |
-| 27 | [ ] | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | Medium | Linked List, Two Pointers, Stack, Recursion | Todo | | | | Reorder list to L0→Ln→L1→Ln-1→L2→Ln-2... | |
-| 28 | [ ] | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked List, Two Pointers | Todo | | | | Remove the nth node from the end of the list. | |
-| 29 | [ ] | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | Hash Table, Linked List, Design | Todo | | | | Design a data structure that follows LRU cache constraints. | |
-| 30 | [ ] | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | Array, Two Pointers, Binary Search | Todo | | | | Find the duplicate number in array of n+1 integers. | |
-| 31 | [ ] | 23 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Linked List, Divide & Conquer, Heap | Todo | | | | Merge k sorted linked lists into one sorted list. | |
+| 24 | [x] | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked List, Recursion | Done | | | | Reverse a singly linked list. | |
+| 25 | [x] | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked List, Recursion | Done | | | | Merge two sorted linked lists into one sorted list. | |
+| 26 | [x] | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | Hash Table, Linked List, Two Pointers | Done | | | | Detect if a linked list has a cycle. | |
+| 27 | [x] | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/) | Medium | Linked List, Two Pointers, Stack, Recursion | Done | | | | Reorder list to L0→Ln→L1→Ln-1→L2→Ln-2... | |
+| 28 | [x] | 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked List, Two Pointers | Done | | | | Remove the nth node from the end of the list. | |
+| 29 | [x] | 146 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | Medium | Hash Table, Linked List, Design | Done | | | | Design a data structure that follows LRU cache constraints. | |
+| 30 | [x] | 287 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | Array, Two Pointers, Binary Search | Done | | | | Find the duplicate number in array of n+1 integers. | |
+| 31 | [x] | 23 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Linked List, Divide & Conquer, Heap | Done | | | | Merge k sorted linked lists into one sorted list. | |
 
 ---
 
@@ -88,17 +88,17 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 32 | [ ] | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | Tree, DFS, BFS, Binary Tree | Todo | | | | Invert a binary tree. | |
-| 33 | [ ] | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | Tree, DFS, BFS, Binary Tree | Todo | | | | Find the maximum depth of a binary tree. | |
-| 34 | [ ] | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Tree, DFS, BFS, Binary Tree | Todo | | | | Check if two binary trees are the same. | |
-| 35 | [ ] | 572 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | Tree, DFS, Binary Tree, String Matching | Todo | | | | Check if a tree is a subtree of another tree. | |
-| 36 | [ ] | 235 | [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | Tree, DFS, Binary Search Tree | Todo | | | | Find lowest common ancestor of two nodes in a BST. | |
-| 37 | [ ] | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | Tree, BFS, Binary Tree | Todo | | | | Return the level order traversal of binary tree node values. | |
-| 38 | [ ] | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Tree, DFS, Binary Search Tree | Todo | | | | Determine if a binary tree is a valid BST. | |
-| 39 | [ ] | 230 | [Kth Smallest Element in BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | Tree, DFS, Binary Search Tree | Todo | | | | Find the kth smallest element in a BST. | |
-| 40 | [ ] | 105 | [Construct Tree from Preorder and Inorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | Array, Hash Table, Divide & Conquer, Tree | Todo | | | | Build binary tree from preorder and inorder traversal. | |
-| 41 | [ ] | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | DP, Tree, DFS, Binary Tree | Todo | | | | Find the maximum path sum in a binary tree. | |
-| 42 | [ ] | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | String, Tree, DFS, BFS, Design | Todo | | | | Design an algorithm to serialize and deserialize a binary tree. | |
+| 32 | [x] | 226 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | Easy | Tree, DFS, BFS, Binary Tree | Done | | | | Invert a binary tree. | |
+| 33 | [x] | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | Easy | Tree, DFS, BFS, Binary Tree | Done | | | | Find the maximum depth of a binary tree. | |
+| 34 | [x] | 100 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Tree, DFS, BFS, Binary Tree | Done | | | | Check if two binary trees are the same. | |
+| 35 | [x] | 572 | [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | Easy | Tree, DFS, Binary Tree, String Matching | Done | | | | Check if a tree is a subtree of another tree. | |
+| 36 | [x] | 235 | [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | Medium | Tree, DFS, Binary Search Tree | Done | | | | Find lowest common ancestor of two nodes in a BST. | |
+| 37 | [x] | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | Medium | Tree, BFS, Binary Tree | Done | | | | Return the level order traversal of binary tree node values. | |
+| 38 | [x] | 98 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Tree, DFS, Binary Search Tree | Done | | | | Determine if a binary tree is a valid BST. | |
+| 39 | [x] | 230 | [Kth Smallest Element in BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Medium | Tree, DFS, Binary Search Tree | Done | | | | Find the kth smallest element in a BST. | |
+| 40 | [x] | 105 | [Construct Tree from Preorder and Inorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium | Array, Hash Table, Divide & Conquer, Tree | Done | | | | Build binary tree from preorder and inorder traversal. | |
+| 41 | [x] | 124 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | DP, Tree, DFS, Binary Tree | Done | | | | Find the maximum path sum in a binary tree. | |
+| 42 | [x] | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Hard | String, Tree, DFS, BFS, Design | Done | | | | Design an algorithm to serialize and deserialize a binary tree. | |
 
 ---
 
@@ -198,10 +198,10 @@
 
 | # | ✅ | Index | Title | Difficulty | Tag | Status | Date Solved | Time | Space | Description | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 79 | [ ] | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Divide & Conquer, Bit Manipulation | Todo | | | | Return the number of '1' bits in an integer (Hamming weight). | |
-| 80 | [ ] | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | DP, Bit Manipulation | Todo | | | | Return array of number of 1's in binary for each i from 0 to n. | |
-| 81 | [ ] | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | Divide & Conquer, Bit Manipulation | Todo | | | | Reverse bits of a given 32-bit unsigned integer. | |
-| 82 | [ ] | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | Array, Math, Bit Manipulation | Todo | | | | Find the missing number in range [0, n]. | |
+| 79 | [x] | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | Easy | Divide & Conquer, Bit Manipulation | Done | | | | Return the number of '1' bits in an integer (Hamming weight). | |
+| 80 | [x] | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | Easy | DP, Bit Manipulation | Done | | | | Return array of number of 1's in binary for each i from 0 to n. | |
+| 81 | [x] | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/) | Easy | Divide & Conquer, Bit Manipulation | Done | | | | Reverse bits of a given 32-bit unsigned integer. | |
+| 82 | [x] | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | Easy | Array, Math, Bit Manipulation | Done | | | | Find the missing number in range [0, n]. | |
 | 83 | [ ] | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | Medium | Math, Bit Manipulation | Todo | | | | Calculate sum of two integers without using + or - operators. | |
 
 ---
@@ -220,13 +220,13 @@
 
 | Category | Total | Done |
 |---|---|---|
-| Array & Hashing | 8 | 0 |
-| Two Pointers | 4 | 0 |
-| Sliding Window | 4 | 0 |
-| Stack | 3 | 0 |
-| Binary Search | 4 | 0 |
-| Linked List | 8 | 0 |
-| Trees | 11 | 0 |
+| Array & Hashing | 8 | 3 |
+| Two Pointers | 4 | 1 |
+| Sliding Window | 4 | 1 |
+| Stack | 3 | 1 |
+| Binary Search | 4 | 4 |
+| Linked List | 8 | 8 |
+| Trees | 11 | 11 |
 | Heap / Priority Queue | 2 | 0 |
 | Backtracking | 5 | 0 |
 | Graphs | 7 | 0 |
@@ -235,10 +235,10 @@
 | 2D Dynamic Programming | 4 | 0 |
 | Intervals | 3 | 0 |
 | Trie | 3 | 0 |
-| Bit Manipulation | 5 | 0 |
+| Bit Manipulation | 5 | 4 |
 | Math & Geometry | 3 | 0 |
-| **Total** | **86** | **0** |
+| **Total** | **86** | **33** |
 
 ---
 
-*Last updated: 2026-05-06*
+*Last updated: 2026-06-04*

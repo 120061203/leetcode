@@ -1,6 +1,6 @@
 # Blind 75 LeetCode 刷題紀錄
 
-> 📊 進度：0 / 75 完成
+> 📊 進度：33 / 75 完成
 
 ---
 
@@ -15,11 +15,11 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | [ ] | 1 | [兩數之和 Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 簡單 | 陣列, 雜湊表 | 待解 | | | | 給定整數陣列，回傳相加等於目標值的兩個索引。 | |
+| 1 | [x] | 1 | [兩數之和 Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 簡單 | 陣列, 雜湊表 | 已完成 | | | | 給定整數陣列，回傳相加等於目標值的兩個索引。 | |
 | 2 | [ ] | 49 | [字母異位詞分組 Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 中等 | 陣列, 雜湊表, 字串, 排序 | 待解 | | | | 將互為字母異位詞的字串分在同一組。 | |
-| 3 | [ ] | 217 | [存在重複元素 Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 簡單 | 陣列, 雜湊表, 排序 | 待解 | | | | 若陣列中任何值出現至少兩次則回傳 true。 | |
+| 3 | [x] | 217 | [存在重複元素 Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 簡單 | 陣列, 雜湊表, 排序 | 已完成 | | | | 若陣列中任何值出現至少兩次則回傳 true。 | |
 | 4 | [ ] | 238 | [除自身以外陣列的乘積 Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | 🟡 中等 | 陣列, 前綴和 | 待解 | | | | 回傳每個元素為其他所有元素乘積的陣列，不能用除法。 | |
-| 5 | [ ] | 242 | [有效的字母異位詞 Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 簡單 | 雜湊表, 字串, 排序 | 待解 | | | | 判斷兩個字串是否互為字母異位詞。 | |
+| 5 | [x] | 242 | [有效的字母異位詞 Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 簡單 | 雜湊表, 字串, 排序 | 已完成 | | | | 判斷兩個字串是否互為字母異位詞。 | |
 | 6 | [ ] | 347 | [前 K 個高頻元素 Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 🟡 中等 | 陣列, 雜湊表, 堆積 | 待解 | | | | 回傳陣列中出現頻率最高的 k 個元素。 | |
 | 7 | [ ] | 271 | [字串的編碼與解碼 Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | 🟡 中等 | 陣列, 字串, 設計 | 待解 | | | | 設計演算法對字串列表進行編碼與解碼。 | |
 | 8 | [ ] | 128 | [最長連續序列 Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 🟡 中等 | 陣列, 雜湊表, 聯集查找 | 待解 | | | | 找出最長連續元素序列的長度，要求 O(n)。 | |
@@ -30,7 +30,7 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 9 | [ ] | 125 | [驗證回文串 Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 簡單 | 雙指針, 字串 | 待解 | | | | 只考慮英數字元，判斷字串是否為回文。 | |
+| 9 | [x] | 125 | [驗證回文串 Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 簡單 | 雙指針, 字串 | 已完成 | | | | 只考慮英數字元，判斷字串是否為回文。 | |
 | 10 | [ ] | 15 | [三數之和 3Sum](https://leetcode.com/problems/3sum/) | 🟡 中等 | 陣列, 雙指針, 排序 | 待解 | | | | 找出所有和為零的不重複三元組。 | |
 | 11 | [ ] | 11 | [盛最多水的容器 Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 🟡 中等 | 陣列, 雙指針, 貪心 | 待解 | | | | 找出能盛最多水的兩條線。 | |
 | 12 | [ ] | 42 | [接雨水 Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | 🔴 困難 | 陣列, 雙指針, 堆疊, 動態規劃 | 待解 | | | | 計算地形能接住多少雨水。 | |
@@ -41,7 +41,7 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 13 | [ ] | 121 | [買賣股票的最佳時機 Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 🟢 簡單 | 陣列, 動態規劃 | 待解 | | | | 找出一次買賣能獲得的最大利潤。 | |
+| 13 | [x] | 121 | [買賣股票的最佳時機 Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 🟢 簡單 | 陣列, 動態規劃 | 已完成 | | | | 找出一次買賣能獲得的最大利潤。 | |
 | 14 | [ ] | 3 | [無重複字元的最長子串 Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 中等 | 雜湊表, 字串, 滑動視窗 | 待解 | | | | 找出不含重複字元的最長子串長度。 | |
 | 15 | [ ] | 424 | [替換後的最長重複字元 Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | 🟡 中等 | 雜湊表, 字串, 滑動視窗 | 待解 | | | | 最多替換 k 個字元後，找最長相同字母子串。 | |
 | 16 | [ ] | 76 | [最小覆蓋子串 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | 🔴 困難 | 雜湊表, 字串, 滑動視窗 | 待解 | | | | 找包含 t 所有字元的最小視窗子串。 | |
@@ -52,7 +52,7 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 17 | [ ] | 20 | [有效的括號 Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 簡單 | 字串, 堆疊 | 待解 | | | | 判斷括號字串是否有效匹配。 | |
+| 17 | [x] | 20 | [有效的括號 Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 簡單 | 字串, 堆疊 | 已完成 | | | | 判斷括號字串是否有效匹配。 | |
 | 18 | [ ] | 155 | [最小堆疊 Min Stack](https://leetcode.com/problems/min-stack/) | 🟡 中等 | 堆疊, 設計 | 待解 | | | | 設計支援 O(1) 取得最小值的堆疊。 | |
 | 19 | [ ] | 84 | [柱狀圖中最大的矩形 Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | 🔴 困難 | 陣列, 堆疊, 單調堆疊 | 待解 | | | | 找柱狀圖中面積最大的矩形。 | |
 
@@ -62,10 +62,10 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 20 | [ ] | 74 | [搜尋二維矩陣 Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | 🟡 中等 | 陣列, 二分搜尋, 矩陣 | 待解 | | | | 在排序好的 m×n 矩陣中搜尋目標值。 | |
-| 21 | [ ] | 153 | [尋找旋轉排序陣列中的最小值 Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | 🟡 中等 | 陣列, 二分搜尋 | 待解 | | | | 找旋轉排序陣列中的最小元素。 | |
-| 22 | [ ] | 33 | [搜尋旋轉排序陣列 Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | 🟡 中等 | 陣列, 二分搜尋 | 待解 | | | | 在旋轉排序陣列中搜尋目標值。 | |
-| 23 | [ ] | 4 | [兩個排序陣列的中位數 Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | 🔴 困難 | 陣列, 二分搜尋, 分治 | 待解 | | | | 以 O(log(m+n)) 找出兩個排序陣列的中位數。 | |
+| 20 | [x] | 74 | [搜尋二維矩陣 Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | 🟡 中等 | 陣列, 二分搜尋, 矩陣 | 已完成 | | | | 在排序好的 m×n 矩陣中搜尋目標值。 | |
+| 21 | [x] | 153 | [尋找旋轉排序陣列中的最小值 Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | 🟡 中等 | 陣列, 二分搜尋 | 已完成 | | | | 找旋轉排序陣列中的最小元素。 | |
+| 22 | [x] | 33 | [搜尋旋轉排序陣列 Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | 🟡 中等 | 陣列, 二分搜尋 | 已完成 | | | | 在旋轉排序陣列中搜尋目標值。 | |
+| 23 | [x] | 4 | [兩個排序陣列的中位數 Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | 🔴 困難 | 陣列, 二分搜尋, 分治 | 已完成 | | | | 以 O(log(m+n)) 找出兩個排序陣列的中位數。 | |
 
 ---
 
@@ -73,14 +73,14 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 24 | [ ] | 206 | [反轉鏈結串列 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 🟢 簡單 | 鏈結串列, 遞迴 | 待解 | | | | 反轉一個單向鏈結串列。 | |
-| 25 | [ ] | 21 | [合併兩個有序鏈結串列 Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 簡單 | 鏈結串列, 遞迴 | 待解 | | | | 將兩個有序鏈結串列合併成一個有序串列。 | |
-| 26 | [ ] | 141 | [環形鏈結串列 Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 🟢 簡單 | 雜湊表, 鏈結串列, 雙指針 | 待解 | | | | 判斷鏈結串列中是否有環。 | |
-| 27 | [ ] | 143 | [重排鏈結串列 Reorder List](https://leetcode.com/problems/reorder-list/) | 🟡 中等 | 鏈結串列, 雙指針, 堆疊, 遞迴 | 待解 | | | | 將串列重排為 L0→Ln→L1→Ln-1→L2→Ln-2... | |
-| 28 | [ ] | 19 | [刪除鏈結串列的倒數第 N 個節點 Remove Nth Node From End](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 🟡 中等 | 鏈結串列, 雙指針 | 待解 | | | | 刪除鏈結串列倒數第 n 個節點。 | |
-| 29 | [ ] | 146 | [LRU 快取 LRU Cache](https://leetcode.com/problems/lru-cache/) | 🟡 中等 | 雜湊表, 鏈結串列, 設計 | 待解 | | | | 設計符合 LRU 快取限制的資料結構。 | |
-| 30 | [ ] | 287 | [尋找重複數 Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | 🟡 中等 | 陣列, 雙指針, 二分搜尋 | 待解 | | | | 在 n+1 個整數的陣列中找出重複的數字。 | |
-| 31 | [ ] | 23 | [合併 K 個升序鏈結串列 Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | 🔴 困難 | 鏈結串列, 分治, 堆積 | 待解 | | | | 合併 k 個排序鏈結串列成一個排序串列。 | |
+| 24 | [x] | 206 | [反轉鏈結串列 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | 🟢 簡單 | 鏈結串列, 遞迴 | 已完成 | | | | 反轉一個單向鏈結串列。 | |
+| 25 | [x] | 21 | [合併兩個有序鏈結串列 Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 🟢 簡單 | 鏈結串列, 遞迴 | 已完成 | | | | 將兩個有序鏈結串列合併成一個有序串列。 | |
+| 26 | [x] | 141 | [環形鏈結串列 Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 🟢 簡單 | 雜湊表, 鏈結串列, 雙指針 | 已完成 | | | | 判斷鏈結串列中是否有環。 | |
+| 27 | [x] | 143 | [重排鏈結串列 Reorder List](https://leetcode.com/problems/reorder-list/) | 🟡 中等 | 鏈結串列, 雙指針, 堆疊, 遞迴 | 已完成 | | | | 將串列重排為 L0→Ln→L1→Ln-1→L2→Ln-2... | |
+| 28 | [x] | 19 | [刪除鏈結串列的倒數第 N 個節點 Remove Nth Node From End](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 🟡 中等 | 鏈結串列, 雙指針 | 已完成 | | | | 刪除鏈結串列倒數第 n 個節點。 | |
+| 29 | [x] | 146 | [LRU 快取 LRU Cache](https://leetcode.com/problems/lru-cache/) | 🟡 中等 | 雜湊表, 鏈結串列, 設計 | 已完成 | | | | 設計符合 LRU 快取限制的資料結構。 | |
+| 30 | [x] | 287 | [尋找重複數 Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | 🟡 中等 | 陣列, 雙指針, 二分搜尋 | 已完成 | | | | 在 n+1 個整數的陣列中找出重複的數字。 | |
+| 31 | [x] | 23 | [合併 K 個升序鏈結串列 Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | 🔴 困難 | 鏈結串列, 分治, 堆積 | 已完成 | | | | 合併 k 個排序鏈結串列成一個排序串列。 | |
 
 ---
 
@@ -88,17 +88,17 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 32 | [ ] | 226 | [翻轉二元樹 Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 🟢 簡單 | 樹, DFS, BFS, 二元樹 | 待解 | | | | 翻轉一棵二元樹。 | |
-| 33 | [ ] | 104 | [二元樹的最大深度 Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | 🟢 簡單 | 樹, DFS, BFS, 二元樹 | 待解 | | | | 找出二元樹的最大深度。 | |
-| 34 | [ ] | 100 | [相同的樹 Same Tree](https://leetcode.com/problems/same-tree/) | 🟢 簡單 | 樹, DFS, BFS, 二元樹 | 待解 | | | | 判斷兩棵二元樹是否相同。 | |
-| 35 | [ ] | 572 | [另一棵樹的子樹 Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | 🟢 簡單 | 樹, DFS, 二元樹, 字串匹配 | 待解 | | | | 判斷一棵樹是否為另一棵樹的子樹。 | |
-| 36 | [ ] | 235 | [二元搜尋樹的最近公共祖先 Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 🟡 中等 | 樹, DFS, 二元搜尋樹 | 待解 | | | | 在 BST 中找兩個節點的最近公共祖先。 | |
-| 37 | [ ] | 102 | [二元樹的層序遍歷 Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | 🟡 中等 | 樹, BFS, 二元樹 | 待解 | | | | 回傳二元樹節點值的層序遍歷結果。 | |
-| 38 | [ ] | 98 | [驗證二元搜尋樹 Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | 🟡 中等 | 樹, DFS, 二元搜尋樹 | 待解 | | | | 判斷一棵二元樹是否為有效的 BST。 | |
-| 39 | [ ] | 230 | [二元搜尋樹中第 K 小的元素 Kth Smallest Element in BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | 🟡 中等 | 樹, DFS, 二元搜尋樹 | 待解 | | | | 找出 BST 中第 k 小的元素。 | |
-| 40 | [ ] | 105 | [從前序與中序遍歷序列建構二元樹 Construct Binary Tree](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 🟡 中等 | 陣列, 雜湊表, 分治, 樹 | 待解 | | | | 根據前序和中序遍歷建構二元樹。 | |
-| 41 | [ ] | 124 | [二元樹中的最大路徑和 Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | 🔴 困難 | 動態規劃, 樹, DFS, 二元樹 | 待解 | | | | 找出二元樹中路徑和最大的路徑。 | |
-| 42 | [ ] | 297 | [二元樹的序列化與反序列化 Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | 🔴 困難 | 字串, 樹, DFS, BFS, 設計 | 待解 | | | | 設計二元樹的序列化與反序列化演算法。 | |
+| 32 | [x] | 226 | [翻轉二元樹 Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 🟢 簡單 | 樹, DFS, BFS, 二元樹 | 已完成 | | | | 翻轉一棵二元樹。 | |
+| 33 | [x] | 104 | [二元樹的最大深度 Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | 🟢 簡單 | 樹, DFS, BFS, 二元樹 | 已完成 | | | | 找出二元樹的最大深度。 | |
+| 34 | [x] | 100 | [相同的樹 Same Tree](https://leetcode.com/problems/same-tree/) | 🟢 簡單 | 樹, DFS, BFS, 二元樹 | 已完成 | | | | 判斷兩棵二元樹是否相同。 | |
+| 35 | [x] | 572 | [另一棵樹的子樹 Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) | 🟢 簡單 | 樹, DFS, 二元樹, 字串匹配 | 已完成 | | | | 判斷一棵樹是否為另一棵樹的子樹。 | |
+| 36 | [x] | 235 | [二元搜尋樹的最近公共祖先 Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | 🟡 中等 | 樹, DFS, 二元搜尋樹 | 已完成 | | | | 在 BST 中找兩個節點的最近公共祖先。 | |
+| 37 | [x] | 102 | [二元樹的層序遍歷 Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | 🟡 中等 | 樹, BFS, 二元樹 | 已完成 | | | | 回傳二元樹節點值的層序遍歷結果。 | |
+| 38 | [x] | 98 | [驗證二元搜尋樹 Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | 🟡 中等 | 樹, DFS, 二元搜尋樹 | 已完成 | | | | 判斷一棵二元樹是否為有效的 BST。 | |
+| 39 | [x] | 230 | [二元搜尋樹中第 K 小的元素 Kth Smallest Element in BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | 🟡 中等 | 樹, DFS, 二元搜尋樹 | 已完成 | | | | 找出 BST 中第 k 小的元素。 | |
+| 40 | [x] | 105 | [從前序與中序遍歷序列建構二元樹 Construct Binary Tree](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 🟡 中等 | 陣列, 雜湊表, 分治, 樹 | 已完成 | | | | 根據前序和中序遍歷建構二元樹。 | |
+| 41 | [x] | 124 | [二元樹中的最大路徑和 Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | 🔴 困難 | 動態規劃, 樹, DFS, 二元樹 | 已完成 | | | | 找出二元樹中路徑和最大的路徑。 | |
+| 42 | [x] | 297 | [二元樹的序列化與反序列化 Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | 🔴 困難 | 字串, 樹, DFS, BFS, 設計 | 已完成 | | | | 設計二元樹的序列化與反序列化演算法。 | |
 
 ---
 
@@ -198,10 +198,10 @@
 
 | # | ✅ | 題號 | 題目 | 難度 | 標籤 | 狀態 | 解題日期 | 時間複雜度 | 空間複雜度 | 題目描述 | 解題筆記 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 79 | [ ] | 191 | [位元 1 的個數 Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | 🟢 簡單 | 分治, 位元操作 | 待解 | | | | 回傳整數二進位表示中 '1' 的位元數（漢明重量）。 | |
-| 80 | [ ] | 338 | [位元計數 Counting Bits](https://leetcode.com/problems/counting-bits/) | 🟢 簡單 | 動態規劃, 位元操作 | 待解 | | | | 回傳 0 到 n 每個數字二進位中 1 的個數。 | |
-| 81 | [ ] | 190 | [顛倒二進位 Reverse Bits](https://leetcode.com/problems/reverse-bits/) | 🟢 簡單 | 分治, 位元操作 | 待解 | | | | 顛倒給定 32 位元無號整數的位元。 | |
-| 82 | [ ] | 268 | [消失的數字 Missing Number](https://leetcode.com/problems/missing-number/) | 🟢 簡單 | 陣列, 數學, 位元操作 | 待解 | | | | 找出 [0, n] 範圍中消失的那個數字。 | |
+| 79 | [x] | 191 | [位元 1 的個數 Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | 🟢 簡單 | 分治, 位元操作 | 已完成 | | | | 回傳整數二進位表示中 '1' 的位元數（漢明重量）。 | |
+| 80 | [x] | 338 | [位元計數 Counting Bits](https://leetcode.com/problems/counting-bits/) | 🟢 簡單 | 動態規劃, 位元操作 | 已完成 | | | | 回傳 0 到 n 每個數字二進位中 1 的個數。 | |
+| 81 | [x] | 190 | [顛倒二進位 Reverse Bits](https://leetcode.com/problems/reverse-bits/) | 🟢 簡單 | 分治, 位元操作 | 已完成 | | | | 顛倒給定 32 位元無號整數的位元。 | |
+| 82 | [x] | 268 | [消失的數字 Missing Number](https://leetcode.com/problems/missing-number/) | 🟢 簡單 | 陣列, 數學, 位元操作 | 已完成 | | | | 找出 [0, n] 範圍中消失的那個數字。 | |
 | 83 | [ ] | 371 | [兩整數之和 Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) | 🟡 中等 | 數學, 位元操作 | 待解 | | | | 不使用 + 或 - 運算子計算兩整數之和。 | |
 
 ---
@@ -220,13 +220,13 @@
 
 | 分類 | 總題數 | 已完成 |
 |---|---|---|
-| 陣列 & 雜湊 | 8 | 0 |
-| 雙指針 | 4 | 0 |
-| 滑動視窗 | 4 | 0 |
-| 堆疊 | 3 | 0 |
-| 二分搜尋 | 4 | 0 |
-| 鏈結串列 | 8 | 0 |
-| 樹 | 11 | 0 |
+| 陣列 & 雜湊 | 8 | 3 |
+| 雙指針 | 4 | 1 |
+| 滑動視窗 | 4 | 1 |
+| 堆疊 | 3 | 1 |
+| 二分搜尋 | 4 | 4 |
+| 鏈結串列 | 8 | 8 |
+| 樹 | 11 | 11 |
 | 堆積 / 優先佇列 | 2 | 0 |
 | 回溯法 | 5 | 0 |
 | 圖論 | 7 | 0 |
@@ -235,10 +235,10 @@
 | 二維動態規劃 | 4 | 0 |
 | 區間 | 3 | 0 |
 | 字典樹 | 3 | 0 |
-| 位元操作 | 5 | 0 |
+| 位元操作 | 5 | 4 |
 | 數學 & 幾何 | 3 | 0 |
-| **總計** | **86** | **0** |
+| **總計** | **86** | **33** |
 
 ---
 
-*最後更新：2026-05-06*
+*最後更新：2026-06-04*
