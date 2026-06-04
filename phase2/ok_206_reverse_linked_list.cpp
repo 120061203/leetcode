@@ -24,7 +24,14 @@ struct ListNode {
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-
+        ListNode* prev = nullptr, *cur = head;
+        while (cur) {
+            ListNode* next = cur->next; // 先存下一個，避免斷鏈後找不到
+            cur->next = prev;           // 反轉箭頭方向
+            prev = cur;                 // prev 往前移
+            cur = next;                 // cur 往後移
+        }
+        return prev; // prev 停在原本最後一個節點，即新的 head
     }
 };
 
