@@ -21,14 +21,18 @@ using namespace std;
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<int> h1 = {2,1,5,6,2,3};
+    cout << sol.largestRectangleArea(h1) << "\n"; // 期望: 10
+    vector<int> h2 = {2,4};
+    cout << sol.largestRectangleArea(h2) << "\n"; // 期望: 4
 
     return 0;
 }

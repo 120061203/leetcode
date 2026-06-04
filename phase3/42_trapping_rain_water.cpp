@@ -21,14 +21,18 @@ using namespace std;
 class Solution {
 public:
     int trap(vector<int>& height) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<int> h1 = {0,1,0,2,1,0,1,3,2,1,2,1};
+    cout << sol.trap(h1) << "\n"; // 期望: 6
+    vector<int> h2 = {4,2,0,3,2,5};
+    cout << sol.trap(h2) << "\n"; // 期望: 9
 
     return 0;
 }

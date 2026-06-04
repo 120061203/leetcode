@@ -21,14 +21,21 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例：打印子集数量
+    vector<int> n1 = {1,2,3};
+    auto r1 = sol.subsets(n1);
+    cout << r1.size() << "\n"; // 期望: 8（共8个子集）
+
+    vector<int> n2 = {0};
+    auto r2 = sol.subsets(n2);
+    cout << r2.size() << "\n"; // 期望: 2（共2个子集）
 
     return 0;
 }

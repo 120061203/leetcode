@@ -21,14 +21,21 @@ using namespace std;
 class Solution {
 public:
     string groupAnagrams(vector<string>& strs) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例（注意：groupAnagrams 返回类型应为 vector<vector<string>>）
+    vector<string> s1 = {"eat","tea","tan","ate","nat","bat"};
+    sol.groupAnagrams(s1); // 期望: [["bat"],["nat","tan"],["ate","eat","tea"]]
+    cout << "groupAnagrams 测试1完成\n";
+
+    vector<string> s2 = {""};
+    sol.groupAnagrams(s2); // 期望: [[""]]
+    cout << "groupAnagrams 测试2完成\n";
 
     return 0;
 }

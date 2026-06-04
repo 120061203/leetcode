@@ -21,14 +21,16 @@ using namespace std;
 class Solution {
 public:
     int characterReplacement(string s, int k) {
-
+        return 0;
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    cout << sol.characterReplacement("ABAB", 2) << "\n";    // 期望: 4
+    cout << sol.characterReplacement("AABABBA", 1) << "\n"; // 期望: 4
 
     return 0;
 }

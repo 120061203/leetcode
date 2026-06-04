@@ -11,23 +11,32 @@
  */
 
 #include <iostream>
-#include <vector>
-#include <string>
-#include <unordered_map>
-#include <unordered_set>
+#include <stack>
 using namespace std;
 
-class Solution {
+class MinStack {
 public:
-    // Design MinStack class {
+    void push(int val) {
 
+    }
+    void pop() {
+
+    }
+    int top() {
+        return 0;
+    }
+    int getMin() {
+        return 0;
     }
 };
 
 int main() {
-    Solution sol;
-
-    // TODO: add test cases
+    MinStack ms;
+    ms.push(-2); ms.push(0); ms.push(-3);
+    cout << ms.getMin() << "\n"; // -3
+    ms.pop();
+    cout << ms.top()    << "\n"; // 0
+    cout << ms.getMin() << "\n"; // -2
 
     return 0;
 }

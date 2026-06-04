@@ -21,14 +21,19 @@ using namespace std;
 class Solution {
 public:
     int longestConsecutive(vector<int>& nums) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<int> n1 = {100,4,200,1,3,2};
+    cout << sol.longestConsecutive(n1) << "\n"; // 期望: 4
+
+    vector<int> n2 = {0,3,7,2,5,8,4,6,0,1};
+    cout << sol.longestConsecutive(n2) << "\n"; // 期望: 9
 
     return 0;
 }

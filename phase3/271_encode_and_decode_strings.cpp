@@ -21,14 +21,18 @@ using namespace std;
 class Solution {
 public:
     string encode(vector<string>& strs) {
-
+        return {};
     }
 };
 
 int main() {
-    Solution sol;
-
-    // TODO: add test cases
+    // 设计题：编码/解码字符串列表
+    // Codec codec;
+    // vector<string> input = {"Hello","World"};
+    // string encoded = codec.encode(input);
+    // auto decoded = codec.decode(encoded);
+    // cout << (decoded == input ? "OK" : "FAIL") << "\n";
+    cout << "Encode/Decode design problem" << "\n";
 
     return 0;
 }

@@ -20,14 +20,16 @@ using namespace std;
 class Solution {
 public:
     int getSum(int a, int b) {
-
+        return 0;
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    cout << sol.getSum(1, 2) << "\n"; // 期望: 3
+    cout << sol.getSum(2, 3) << "\n"; // 期望: 5
 
     return 0;
 }

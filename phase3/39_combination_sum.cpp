@@ -21,14 +21,33 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例：打印每个组合
+    auto printCombos = [](vector<vector<int>>& res) {
+        for (auto& combo : res) {
+            cout << "[";
+            for (int i = 0; i < (int)combo.size(); i++) {
+                if (i) cout << ",";
+                cout << combo[i];
+            }
+            cout << "] ";
+        }
+        cout << "\n";
+    };
+
+    vector<int> c1 = {2,3,6,7};
+    auto r1 = sol.combinationSum(c1, 7);
+    printCombos(r1); // 期望: [2,2,3] [7]
+
+    vector<int> c2 = {2,3};
+    auto r2 = sol.combinationSum(c2, 6);
+    printCombos(r2); // 期望: [2,2,2] [3,3]
 
     return 0;
 }

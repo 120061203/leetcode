@@ -20,14 +20,17 @@ using namespace std;
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-
+        return 0;
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    cout << sol.lengthOfLongestSubstring("abcabcbb") << "\n"; // 期望: 3
+    cout << sol.lengthOfLongestSubstring("bbbbb") << "\n";    // 期望: 1
+    cout << sol.lengthOfLongestSubstring("pwwkew") << "\n";   // 期望: 3
 
     return 0;
 }

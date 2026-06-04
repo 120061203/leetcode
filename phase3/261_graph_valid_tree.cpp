@@ -21,14 +21,19 @@ using namespace std;
 class Solution {
 public:
     bool validTree(int n, vector<vector<int>>& edges) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<vector<int>> e1 = {{0,1},{0,2},{0,3},{1,4}};
+    cout << sol.validTree(5, e1) << "\n"; // 期望: 1 (true)
+
+    vector<vector<int>> e2 = {{0,1},{1,2},{2,3},{1,3},{1,4}};
+    cout << sol.validTree(5, e2) << "\n"; // 期望: 0 (false，有环)
 
     return 0;
 }

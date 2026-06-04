@@ -1,5 +1,5 @@
 /*
- * 295. Find Median From Data Stream
+ * 295. Find Median from Data Stream
  * Difficulty: Hard
  * Tags: Two Pointers, Design, Sorting, Heap
  *
@@ -11,23 +11,25 @@
  */
 
 #include <iostream>
-#include <vector>
-#include <string>
-#include <unordered_map>
-#include <unordered_set>
+#include <queue>
 using namespace std;
 
-class Solution {
+class MedianFinder {
 public:
-    // Design MedianFinder class {
+    void addNum(int num) {
 
+    }
+    double findMedian() {
+        return 0.0;
     }
 };
 
 int main() {
-    Solution sol;
-
-    // TODO: add test cases
+    MedianFinder mf;
+    mf.addNum(1); mf.addNum(2);
+    cout << mf.findMedian() << "\n"; // 1.5
+    mf.addNum(3);
+    cout << mf.findMedian() << "\n"; // 2.0
 
     return 0;
 }

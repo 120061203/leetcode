@@ -20,14 +20,17 @@ using namespace std;
 class Solution {
 public:
     string minWindow(string s, string t) {
-
+        return "";
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    cout << sol.minWindow("ADOBECODEBANC", "ABC") << "\n"; // 期望: "BANC"
+    cout << sol.minWindow("a", "a") << "\n";               // 期望: "a"
+    cout << sol.minWindow("a", "aa") << "\n";              // 期望: ""
 
     return 0;
 }

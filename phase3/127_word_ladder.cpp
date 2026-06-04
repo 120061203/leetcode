@@ -20,14 +20,19 @@ using namespace std;
 class Solution {
 public:
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<string> wl1 = {"hot","dot","dog","lot","log","cog"};
+    cout << sol.ladderLength("hit", "cog", wl1) << "\n"; // 期望: 5
+
+    vector<string> wl2 = {"hot","dot","dog","lot","log"};
+    cout << sol.ladderLength("hit", "cog", wl2) << "\n"; // 期望: 0
 
     return 0;
 }

@@ -20,14 +20,29 @@ using namespace std;
 class Solution {
 public:
     int numIslands(vector<vector<char>>& grid) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<vector<char>> g1 = {
+        {'1','1','1','1','0'},
+        {'1','1','0','1','0'},
+        {'1','1','0','0','0'},
+        {'0','0','0','0','0'}
+    };
+    cout << sol.numIslands(g1) << "\n"; // 期望: 1
+
+    vector<vector<char>> g2 = {
+        {'1','1','0','0','0'},
+        {'1','1','0','0','0'},
+        {'0','0','1','0','0'},
+        {'0','0','0','1','1'}
+    };
+    cout << sol.numIslands(g2) << "\n"; // 期望: 3
 
     return 0;
 }

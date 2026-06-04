@@ -21,14 +21,19 @@ using namespace std;
 class Solution {
 public:
     int countComponents(int n, vector<vector<int>>& edges) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<vector<int>> e1 = {{0,1},{1,2},{3,4}};
+    cout << sol.countComponents(5, e1) << "\n"; // 期望: 2
+
+    vector<vector<int>> e2 = {{0,1},{1,2},{2,3},{3,4}};
+    cout << sol.countComponents(5, e2) << "\n"; // 期望: 1
 
     return 0;
 }

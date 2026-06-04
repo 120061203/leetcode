@@ -21,14 +21,19 @@ using namespace std;
 class Solution {
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<vector<int>> pre1 = {{1,0}};
+    cout << sol.canFinish(2, pre1) << "\n"; // 期望: 1 (true)
+
+    vector<vector<int>> pre2 = {{1,0},{0,1}};
+    cout << sol.canFinish(2, pre2) << "\n"; // 期望: 0 (false，有环)
 
     return 0;
 }

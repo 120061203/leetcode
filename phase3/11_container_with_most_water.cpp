@@ -21,14 +21,18 @@ using namespace std;
 class Solution {
 public:
     int maxArea(vector<int>& height) {
-
+        return {};
     }
 };
 
 int main() {
     Solution sol;
 
-    // TODO: add test cases
+    // 测试用例
+    vector<int> h1 = {1,8,6,2,5,4,8,3,7};
+    cout << sol.maxArea(h1) << "\n"; // 期望: 49
+    vector<int> h2 = {1,1};
+    cout << sol.maxArea(h2) << "\n"; // 期望: 1
 
     return 0;
 }
